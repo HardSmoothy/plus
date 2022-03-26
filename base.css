@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*============================================
+全般的なスタイル
+============================================*/
+* {
+	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+}
+body {
+	background-color:#cccccc;		/*ページ全体の背景色*/
+	background-image:url("images/base_body.png");	/*ウェブページ全体の背景画像*/
+	font-size:95%;		/* フォントサイズを95%にする */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	/* フォントの種類をゴシック系にする */
+	line-height:1.5;	/* 行の高さを1.5倍にする */
+	color:#333333;		/* 文字色を濃い目のグレーにする */
+}
+div#pagebody {
+	width:1080px; margin:0 auto;	/*内容全体をセンタリング*/
+	background-color:#ebfceb;		/*内容全体の背景色*/
+	background-image:url("images/base_ins.png");	/*コンテンツ全体の背景画像*/
+	background-repeat:repeat-y;			/*背景画像を縦方向に繰り返す*/
+}
+img {border:0;} 				/*画像のボーダーを0にする*/
+
+/*============================================
+ヘッダ
+============================================*/
+div#header {
+	height:180px;				/*ヘッダ部分の高さ*/
+}
+div#header h1 {
+	text-align: center;
+    padding:15px 0px 0px 0px;
+	font-size:18px;				/*フォントのサイズ*/
+	font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+}
+div#header h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
+
+/* header (home) */
+div#header_home {
+	height: 260px;				/*ヘッダ部分の高さ*/
+}
+div#header_home h1 {
+	padding:10px 40px 10px 40px;		/*見出しの位置調整*/
+	font-size:18px;				/*フォントのサイズ*/
+	font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+}
+div#header_home h1 a {text-decoration:none;} 	/*リンクの下線を無くす*/
+
+/*== ページ本文+権利表示調整 ==*/
+div#content {
+    padding:0px 95px 40px 95px;
+}
+div#footer {
+    padding:15px 0px 15px 0px;
+    background-color: aquamarine;
+    background-image:url("images/base_ins_rights.png");	/*コンテンツ全体の背景画像*/
+	background-repeat:repeat-y;			/*背景画像を縦方向に繰り返す*/
+    text-align: center;
+}
+
+div#index {
+	text-align: center;
+    padding:3px 0px 3px 0px;
+    background-color:coral;
+    background-image:url("images/base_ins_plot.png");	/*コンテンツ全体の背景画像*/
+	background-repeat:repeat-y;			/*背景画像を縦方向に繰り返す*/
+}
+
+/*============================================
+メインメニュー
+============================================*/
+ul#main_menu {
+	width:1000px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+	margin:0px 40px; 		/*上下マージン0px、左右マージン20px*/
+}
+#main_menu li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+}
+#main_menu li a {
+    background-color:rgb(178, 243, 176);	/*背景色*/
+	color:#1d0800;		/*文字色*/
+	display:block;			/*リンク部分をブロック表示にする*/
+	width:200px; height:35px;	/*幅と高さ*/
+    padding:15px 0px 0px 0px;	/*上パディング*/
+	text-align:center;		/*テキストをセンター揃えにする*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+	background-image:url(images/buttion_a1.png);	/*背景画像を指定*/
+	background-repeat:no-repeat; 			/*背景画像を繰り返さない*/
+}
+#main_menu li a:hover {
+	background-image:url(images/buttion_a2.png); 	/*リンクにマウスが乗ったら背景画像を変更する*/
+}
+
+#p_center, #p_center_smaller {
+    text-align: center;
+}
+#p_smaller, #p_center_smaller {
+    font-size: smaller;
+}
+#p_right {
+    text-align: right;
+}
+
+p#p_center a, p#p_center_smaller a, p#p_smaller a {
+	text-decoration: dashed;
+	color:#0b5317;
+}
+
+/*== 特別 ==*/
+#titles_small {
+    text-align: center;
+    color:#333333;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+#titles_normal {
+    color:#0b5317;
+    text-decoration: #cccccc;
+    font-size: 52px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+ul#sns {
+	width:600px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+	margin:80px 240px 20px 240px; 		/*上下マージン0px、左右マージン20px*/
+}
+#sns li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+}
+#sns li a {
+    background-color:rgb(178, 243, 176);	/*背景色*/
+	color:#1d0800;		/*文字色*/
+	display:block;			/*リンク部分をブロック表示にする*/
+	width:200px; height:35px;	/*幅と高さ*/
+    padding:15px 0px 0px 0px;	/*上パディング*/
+	text-align:center;		/*テキストをセンター揃えにする*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+    background-image:url(images/buttion_a1.png);	/*背景画像を指定*/
+	background-repeat:no-repeat; 			/*背景画像を繰り返さない*/
+}
+#sns li a:hover {
+	background-image:url(images/buttion_a2.png); 	/*リンクにマウスが乗ったら背景画像を変更する*/
+}
+
+#acps li {
+	padding:0px 0px 0px 30px;
+	list-style-type: none;
+	display:list-item;
+}
+/*============================================
+ヘッダ画像
+============================================*/
+#img_index {
+	width:1000px; height:280px;	/*トップページのヘッダ画像の表示サイズを指定*/
+	margin: 10px 40px;		/*マージン*/
+}
+
+/*== 進捗さん ==*/
+div#news {
+	padding:4px 95px
+}
+#news table {
+	border-collapse: collapse; /* セルの境界線を共有 */
+}
+#news table td,#news table th {
+	border: 1px solid black;  /* 表の罫線(=セルの枠線) */
+	padding: 2px 1em;       /* セル内側の余白量 */
+}
+#news table th:not(#title) {
+	background-color: #dfd;         /* 背景色 */
+	border-right: 3px double green; /* 右側の線 */
+}
+#news table th#title {
+	background-color: #dfd;         /* 背景色 */
+}
+
+#content ul#up {
+	width:910px;
+	padding:2px,95px,16px,95px;
+}
+
+#up li {
+	padding:2px,104px,0px,95px;
+	list-style-type:square
+}
