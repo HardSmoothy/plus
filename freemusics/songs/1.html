@@ -30,13 +30,16 @@
             <div>
                 <div id="s_f0">
                     <h3>（曲名）</h3>
-                    <audio src="../../resourse/music/">
-                        <p id="p_smaller">※プレビューはmp3ファイルのみとなっています。</p>
-                    </audio>
+                    <audio src="music/sound.mp3" preload="auto"></audio>
                 </div>
             </div>
 
             <div id="footer"><small>2022 HardSmoothy Free Musics</small></div>
         </div>
+        <script src="../audiojs/audio.min.js">
+            audiojs.events.ready(function() {
+                audiojs.createAll();
+            });
+        </script>
     </body>
 </html>
