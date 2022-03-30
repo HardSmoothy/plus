@@ -9,6 +9,12 @@
         <meta name="description" content="素人の作るDTMの素材(クラッシック系も多め)">
         <meta name="keywords" content="HardSmoothy,DTM,Music,Free,BGM">
         <title>Free musics | HSPlayer</title>
+        <script src="../audiojs/audio.min.js"></script>
+        <script>
+            audiojs.events.ready(function() {
+                audiojs.createAll();
+            });
+        </script>
     </head>
     <body>
         <div id="pagebody">
@@ -37,10 +43,5 @@
                 <small>2022 HardSmoothy Free Musics</small>
             </div>
         </div>
-        <script src="../audiojs/audio.min.js">
-            audiojs.events.ready(function() {
-                audiojs.createAll();
-            });
-        </script>
     </body>
 </html>
